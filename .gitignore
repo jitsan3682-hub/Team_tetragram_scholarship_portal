@@ -28,6 +28,7 @@ scholarship-backend/google-credentials.json
 *.7z
 *.tar*
 !ScholarBridge_TEZHACK2026.zip
+!EduCamino_TEZHACK2026.zip
 
 # Logs
 *.log
@@ -45,4 +46,5 @@ Thumbs.db
 # Reference archives and test scratch
 ref_*/
 ScholarBridge_TEZHACK2026/
+EduCamino_TEZHACK2026/
 

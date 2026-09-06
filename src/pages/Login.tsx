@@ -37,7 +37,7 @@ export default function Login() {
             </div>
             <div>
               <span className="text-xl font-bold tracking-tight text-stone-950 dark:text-white block leading-tight">
-                ScholarBridge
+                EduCamino
               </span>
               <span className="text-[10px] font-extrabold text-[#D97706] dark:text-amber-400 block uppercase tracking-wider">
                 TEZHACK 2026
@@ -53,7 +53,7 @@ export default function Login() {
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-stone-950 dark:text-white tracking-tight">
-                Sign in to ScholarBridge
+                Sign in to EduCamino
               </h2>
               <p className="text-xs text-stone-600 dark:text-stone-400 mt-1">
                 Enter your registered credentials to access your scholarship directory and applications.
@@ -122,7 +122,7 @@ export default function Login() {
             <div className="bg-[#F5B731] p-3 rounded-2xl text-stone-950 font-bold shadow-xs">
               <GraduationCap className="w-8 h-8" />
             </div>
-            <span className="text-3xl font-bold tracking-tight">ScholarBridge</span>
+            <span className="text-3xl font-bold tracking-tight">EduCamino</span>
           </div>
 
           <h2 className="text-4xl font-bold leading-tight tracking-tight text-white">

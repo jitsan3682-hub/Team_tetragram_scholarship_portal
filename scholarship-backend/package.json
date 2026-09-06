@@ -1,7 +1,7 @@
 {
   "name": "scholarship-backend",
   "version": "1.0.0",
-  "description": "ScholarBridge India Backend - Express, Prisma, Google Drive Storage API",
+  "description": "EduCamino Backend - Express, Prisma, Google Drive Storage API",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -24,6 +24,6 @@
   "devDependencies": {
     "prisma": "^6.4.1"
   },
-  "author": "ScholarBridge Team",
+  "author": "EduCamino Team",
   "license": "ISC"
 }

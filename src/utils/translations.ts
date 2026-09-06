@@ -63,7 +63,7 @@ export interface TranslationDict {
 
 export const translations: Record<SupportedLanguage, TranslationDict> = {
   en: {
-    appName: "ScholarBridge India",
+    appName: "EduCamino",
     tagline: "Transparent, Rule-Based Scholarship Discovery & ATS",
     dashboardTitle: "Scholarship Directory & Matcher",
     eligible: "Eligible",
@@ -118,7 +118,7 @@ export const translations: Record<SupportedLanguage, TranslationDict> = {
     instructionsGuide: "Hackathon & User Guide",
   },
   hi: {
-    appName: "स्कॉलरब्रिज इंडिया",
+    appName: "एडूकैमिनो (EduCamino)",
     tagline: "पारदर्शी, नियम-आधारित छात्रवृत्ति खोज एवं आवेदन प्रणाली",
     dashboardTitle: "छात्रवृत्ति निर्देशिका एवं मैचिंग",
     eligible: "पात्र",
@@ -173,7 +173,7 @@ export const translations: Record<SupportedLanguage, TranslationDict> = {
     instructionsGuide: "मार्गदर्शिका एवं निर्देश",
   },
   as: {
-    appName: "স্কলাৰব্ৰিজ ইণ্ডিয়া",
+    appName: "এডুকামিনো (EduCamino)",
     tagline: "স্বচ্ছ, নিয়ম-ভিত্তিক বৃত্তি সন্ধান আৰু আবেদন ব্যৱস্থা",
     dashboardTitle: "বৃত্তি নিৰ্দেশিকা আৰু যোগ্যতা নিৰ্ণয়",
     eligible: "যোগ্য",

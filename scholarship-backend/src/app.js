@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 // Root health check
 app.get('/', (req, res) => {
   res.json({
-    name: 'ScholarBridge India API',
+    name: 'EduCamino API',
     status: 'running',
     docs: '/api/v1/status',
   });

@@ -27,6 +27,7 @@ export default defineConfig(() => {
           '**/node_modules/**',
           '**/scholarship-backend/**',
           '**/ScholarBridge_TEZHACK2026/**',
+          '**/EduCamino_TEZHACK2026/**',
         ],
       },
     },

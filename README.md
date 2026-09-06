@@ -1,7 +1,7 @@
-# ScholarBridge India — TEZHACK 2026
+# EduCamino — TEZHACK 2026
 ### Problem Statement: WEB02 (Scholarship Eligibility Portal) + Twist Challenge: WEB-004(2) ("SAVE FOR LATER")
 
-ScholarBridge is a high-performance, production-ready web platform that solves the chronic confusion surrounding lengthy scholarship notifications. It matches student profiles against recorded criteria using a **deterministic, transparent rule engine** (zero hidden scores) and features a complete **In-Portal ATS Application Pipeline**, **Reusable Document Locker**, **SOP/LOR Studio**, and a fully persistent **"Save for Later"** bookmarking system.
+EduCamino is a high-performance, production-ready web platform that solves the chronic confusion surrounding lengthy scholarship notifications. It matches student profiles against recorded criteria using a **deterministic, transparent rule engine** (zero hidden scores) and features a complete **In-Portal ATS Application Pipeline**, **Reusable Document Locker**, **SOP/LOR Studio**, and a fully persistent **"Save for Later"** bookmarking system.
 
 ---
 
@@ -134,7 +134,7 @@ The backend server runs on `http://localhost:5000` with the following endpoints:
 On the Login page (`/login`), click any of the 1-click personas to test immediately:
 1. **Priyanka Sarma (Student - Assam):** Domiciled in Assam, B.Tech CSE, GPA 3.8, Income ₹2.5L. Matches *AICTE Pragati* and *NEC Assam*.
 2. **Ananya Devi (Female Scholar in STEM):** B.Tech Engineering, GPA 3.7, Income ₹2.4L, OBC. Matches *AICTE Pragati for Girls*.
-3. **Platform Administrator:** Direct access to `/admin` to evaluate dossiers and publish schemes (`admin@scholarbridge.in`).
+3. **Platform Administrator:** Direct access to `/admin` to evaluate dossiers and publish schemes (`admin@educamino.in`).
 
 ---
 

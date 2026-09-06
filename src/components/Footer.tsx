@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-white dark:bg-[#141210] border-t border-stone-200 dark:border-stone-800 py-6 mt-auto">
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-500 dark:text-stone-400">
         <div className="flex items-center gap-2">
-          <span className="font-extrabold text-stone-900 dark:text-stone-100">ScholarBridge India</span>
+          <span className="font-extrabold text-stone-900 dark:text-stone-100">EduCamino</span>
           <span>•</span>
           <span>TEZHACK 2026 (WEB02 + WEB-004(2))</span>
         </div>

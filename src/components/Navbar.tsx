@@ -40,8 +40,7 @@ export default function Navbar() {
                   <GraduationCap className="w-5 h-5 stroke-[2.5]" />
                 </div>
                 <div className="flex items-baseline">
-                  <span className="text-lg font-bold text-stone-900 dark:text-white">Scholar</span>
-                  <span className="text-lg font-bold text-[#D97706]">Bridge</span>
+                  <span className="text-lg font-bold text-stone-900 dark:text-white">Edu</span><span className="text-lg font-bold text-[#D97706]">Camino</span>
                 </div>
               </Link>
 

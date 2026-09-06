@@ -1,5 +1,5 @@
 # =====================================================================
-# Push ScholarBridge Portal to GitHub
+# Push EduCamino Portal to GitHub
 # Target: https://github.com/jitsan3682-hub/Team_tetragram_scholarship_portal
 # =====================================================================
 
@@ -30,7 +30,7 @@ git add .
 
 # Create commit
 Write-Host ">>> Creating commit..." -ForegroundColor Cyan
-git commit -m "feat: complete ScholarBridge India portal for TEZHACK 2026 (WEB02 + WEB-004(2))"
+git commit -m "feat: complete EduCamino India portal for TEZHACK 2026 (WEB02 + WEB-004(2))"
 
 # Set branch to main
 git branch -M main

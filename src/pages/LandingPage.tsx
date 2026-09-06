@@ -59,8 +59,7 @@ export default function LandingPage() {
                 <GraduationCap className="w-5 h-5 stroke-[2.5]" />
               </div>
               <div className="flex items-baseline">
-                <span className="text-lg font-bold text-stone-900">Scholar</span>
-                <span className="text-lg font-bold text-[#D97706]">Bridge</span>
+                <span className="text-lg font-bold text-stone-900">Edu</span><span className="text-lg font-bold text-[#D97706]">Camino</span>
               </div>
             </Link>
 
@@ -513,11 +512,9 @@ export default function LandingPage() {
       <footer className="relative py-10 z-10 border-t border-stone-200/80 bg-[#F8F6F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-stone-600">
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-lg bg-[#F5B731] flex items-center justify-center text-stone-950 font-bold">
-              S
-            </div>
+            <div className="w-7 h-7 rounded-lg bg-[#F5B731] flex items-center justify-center text-stone-950 font-bold">E</div>
             <span className="text-stone-900 font-bold tracking-tight">
-              ScholarBridge India &bull; TEZHACK 2026
+              EduCamino &bull; TEZHACK 2026
             </span>
           </div>
 

@@ -1,6 +1,6 @@
-# ScholarBridge India - Backend API & Google Drive Integration
+# EduCamino - Backend API & Google Drive Integration
 
-Backend service for **ScholarBridge India** built with Express.js, Prisma ORM, and Google Drive API for storing student profile photos, marksheets, and digital credentials.
+Backend service for **EduCamino** built with Express.js, Prisma ORM, and Google Drive API for storing student profile photos, marksheets, and digital credentials.
 
 ---
 
@@ -33,7 +33,7 @@ Follow these 4 simple steps to connect your own Google Drive storage:
 ### Step 1: Create a Google Cloud Project
 1. Open [Google Cloud Console](https://console.cloud.google.com/).
 2. Click the project dropdown at the top and select **"New Project"**.
-3. Name it **"ScholarBridge"** and click **Create**.
+3. Name it **"EduCamino"** and click **Create**.
 
 ### Step 2: Enable Google Drive API
 1. In the search bar at the top, type **"Google Drive API"**.
@@ -52,7 +52,7 @@ Follow these 4 simple steps to connect your own Google Drive storage:
 
 ### Step 4: Create a Drive Folder & Share with Service Account
 1. Open [Google Drive](https://drive.google.com/).
-2. Create a new folder (e.g., **"ScholarBridge Uploads"**).
+2. Create a new folder (e.g., **"EduCamino Uploads"**).
 3. Right-click the folder > **Share**.
 4. Paste the Service Account's email address (`scholarbridge-drive@your-project.iam.gserviceaccount.com`).
 5. Grant it **"Editor"** permission and click **Send** (uncheck "Notify people" if prompted).
