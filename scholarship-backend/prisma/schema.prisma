@@ -81,3 +81,4 @@ model Application {
   lorUrl        String?
   documents     String?     // JSON list of attached doc URLs
 }
+ 
