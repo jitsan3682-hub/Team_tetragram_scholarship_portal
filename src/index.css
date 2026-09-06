@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root, h1, h2, h3, h4, h5, h6, p, span, label, a, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif !important;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-gold-primary: #F5B731;
+  --color-gold-hover: #E5A620;
+  --color-gold-card: #F6BA33;
+  --color-cream-card: #FEF6DF;
+  --color-cream-canvas: #F8F6F0;
+  --color-cream-surface: #FAF8F5;
+  --color-stone-charcoal: #1C1917;
+  --font-sans: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+
+:root {
+  --bg: #F8F6F0;
+  --surface: #FFFFFF;
+  --fg: #1C1917;
+  --muted: #78716C;
+  --border: #E7E5E4;
+  --accent: #F5B731;
+  --accent-gold: #F5B731;
+  --card-gold: #F6BA33;
+  --card-cream: #FEF6DF;
+  
+  --eligible-bg: #ECFDF5;
+  --eligible-fg: #065F46;
+  --eligible-border: #A7F3D0;
+
+  --possible-bg: #FFFBEB;
+  --possible-fg: #92400E;
+  --possible-border: #FDE68A;
+
+  --ineligible-bg: #FFF1F2;
+  --ineligible-fg: #9F1239;
+  --ineligible-border: #FECDD3;
+}
+
+html.dark, :root.dark {
+  --bg: #141210;
+  --surface: #1E1B18;
+  --fg: #FDFBF7;
+  --muted: #A8A29E;
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: #F5B731;
+  --accent-gold: #F5B731;
+  --card-gold: #2A2315;
+  --card-cream: #221F1B;
+  
+  --eligible-bg: rgba(6, 95, 70, 0.25);
+  --eligible-fg: #6EE7B7;
+  --eligible-border: rgba(52, 211, 153, 0.4);
+
+  --possible-bg: rgba(146, 64, 14, 0.25);
+  --possible-fg: #FCD34D;
+  --possible-border: rgba(251, 191, 36, 0.4);
+
+  --ineligible-bg: rgba(159, 18, 57, 0.25);
+  --ineligible-fg: #FDA4AF;
+  --ineligible-border: rgba(244, 63, 94, 0.4);
+}
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  background-color: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+button, input, select, textarea {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.font-serif {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.font-sans {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.font-display {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.font-mono {
+  font-family: var(--font-mono) !important;
+  font-variant-numeric: tabular-nums;
+}

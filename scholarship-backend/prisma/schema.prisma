@@ -1,0 +1,83 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id                     String        @id @default(uuid())
+  email                  String        @unique
+  password               String
+  name                   String
+  role                   String        @default("student") // 'student' | 'admin'
+  state                  String?
+  major                  String?
+  academicLevel          String?       @default("Undergraduate")
+  gpa                    Float?
+  familyIncome           Int?
+  category               String?       @default("General")
+  gender                 String?       @default("Male")
+  expectedGraduationYear Int?
+  isCAPFWard             Boolean?      @default(false)
+  careerGoals            String?
+  profilePicture         String?       // Google Drive direct image URL or webViewLink
+  documents              Document[]
+  applications           Application[]
+  createdAt              DateTime      @default(now())
+  updatedAt              DateTime      @updatedAt
+}
+
+model Document {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title       String
+  type        String   // 'Certificate' | 'Marksheet' | 'Income_Certificate' | 'Other'
+  fileUrl     String   // Google Drive URL
+  fileId      String?  // Google Drive File ID
+  mimeType    String?
+  sizeBytes   Int?
+  verified    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
+
+model Scholarship {
+  id           String        @id @default(uuid())
+  title        String
+  provider     String
+  category     String        @default("Central") // 'Central' | 'State' | 'UGC' | 'AICTE' | 'Private' | 'Corporate' | 'International'
+  amount       String
+  deadline     String
+  description  String
+  awardType    String        @default("Merit Award")
+  minGpa       Float         @default(0)
+  maxIncome    Int           @default(999999999)
+  states       String        @default("All") // Comma-separated or JSON
+  majors       String        @default("All")
+  categories   String        @default("All")
+  genders      String        @default("All")
+  docsNeeded   String        @default("")
+  link         String?
+  country      String?
+  nationality  String?
+  isCustom     Boolean       @default(false)
+  applications Application[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+}
+
+model Application {
+  id            String      @id @default(uuid())
+  userId        String
+  scholarshipId String
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scholarship   Scholarship @relation(fields: [scholarshipId], references: [id], onDelete: Cascade)
+  status        String      @default("Submitted") // 'Submitted' | 'Under Review' | 'Accepted' | 'Rejected'
+  appliedDate   DateTime    @default(now())
+  sopText       String?
+  lorUrl        String?
+  documents     String?     // JSON list of attached doc URLs
+}
