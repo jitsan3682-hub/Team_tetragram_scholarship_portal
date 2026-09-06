@@ -215,3 +215,13 @@ export interface EligibilityResult {
   matchScore: number;
   unmetCriteria: string[];
 }
+
+
+
+
+
+
+
+
+
+
